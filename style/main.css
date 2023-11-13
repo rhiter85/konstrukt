@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter&family=Open+Sans:ital,wght@0,400;0,600;0,800;1,700&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 250px;
+}
+
+.story__left {
+    max-width: 350px;
+    margin-right: 30px;
+}
+
+.story__title-h2 {
+    text-transform: uppercase;
+    color: #48555b;
+    text-align: center;
+    font: 700 18px 'OpenSans', sans-serif;
+    padding: 50px 0;
+}
+
+.story__title-h2::after {
+    content: '';
+    width: 50px;
+    height: 2px;
+    background-color: #00A4E5;
+    display: block;
+    margin: 10px auto 0;
+}
+
+.story__title-h3 {
+    max-width: 350px;
+    text-align: left;
+    font: 700 20px 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+.story__flex {
+    display: flex;
+    justify-content: center;
+}
+
+.accent__text {
+    color: #00A4E5;
+}
+
+.story__text {
+    font: 400 13px/23px 'Open Sans', sans-serif;
+    color: #48555B;
+    /* max-width: 367px; */
+}
+
+.story__right {
+    max-width: 450px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.story__item {
+    font: 800 24px/29px 'Open Sans', sans-serif;
+    color: #ffffff;
+    width: 140px;
+    height: 224px;
+    padding: 15px;
+    margin-right: 20px;
+}
+
+.story__item:nth-child(1) {
+    background-image: url(../images/we-plan.jpg);
+}
+
+.story__item:nth-child(2) {
+    background-image: url(../images/we-manage.jpg);
+}
+
+.story__item:nth-child(3) {
+    background-image: url(../images/we-build.jpg);
+    margin-right: 0;
+}
+
+@media screen and (max-width: 1440px) {
+    .container {
+        padding: 0 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .story__flex {
+        text-align: justify;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .story__right {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .story__item {
+        margin: 0;
+    }
+
+    .story {
+        padding: 30px 0;
+    }
+}
