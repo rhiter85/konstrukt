@@ -269,8 +269,10 @@ ul {
 
 
 .services__grid-card {
+    width: min(295px, 90%);
     border: 1px solid #E6E6E6;
     padding: 38px 25px;
+    margin: 0 auto;
     /* margin-right: 50px; */
 }
 
@@ -576,7 +578,7 @@ ul {
 
     .services__grid-card {
         max-width: 260px;
-        margin: 0 auto;
+        margin: 0 0 15px 55px;
         border: 1px solid #E6E6E6;
         padding: 28px 25px;
         margin-right: 45px;
