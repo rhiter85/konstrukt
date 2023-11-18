@@ -44,18 +44,18 @@ ul {
 }
 
 .logo__flex {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 }
 
 .header__flex {
     /* max-height: 769px; */
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     color: #ffffff;
 }
 
@@ -65,10 +65,10 @@ ul {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 60px;
     font-weight: 500;
-    letter-spacing: 5.709px;
+    letter-spacing: 4px;
     line-height: 4rem;
     text-align: center;
-    padding: 0 15px 0 15px;
+    padding: 60px 15px 0 15px;
 }
 
 .header__title-h4 {
@@ -82,10 +82,10 @@ ul {
 }
 
 .scroll__flex {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    align-items: flex-end;
+    align-items: flex-end; */
 }
 
 .scroll_down {
@@ -117,7 +117,7 @@ ul {
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    padding-top: 25px;
+    padding-top: 13px;
 }
 
 .menu__list {
@@ -302,10 +302,12 @@ ul {
     background-size: cover;
     background-position: center;
     text-align: center;
+    margin: 0;
 }
 
 .getintouch-h1 {
-    padding: 115px 20px 35px 20px;
+    color: #48555B;
+    padding: 125px 20px 35px 20px;
     margin: 0;
 }
 
@@ -323,13 +325,13 @@ ul {
 .wrapper__newsletter {
     min-height: 100px;
     background-color: #171819;
-    padding-top: 15px;
+    padding-top: 27px;
     padding-bottom: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
     /* flex-wrap: wrap; */
-    /* margin: 0 auto; */
+    margin: 0;
 }
 
 .newsletter__title {
@@ -361,7 +363,7 @@ ul {
 .wrapper__footer {
     color: #FFF;
     font-size: 13px;
-    padding-top: 32px;
+    padding-top: 33px;
     padding-bottom: 25px;
     display: flex;
     max-width: 941px;
@@ -377,16 +379,17 @@ ul {
 }
 
 .footer-p {
-margin-top: 15px;
-line-height: normal;
+    margin-top: 15px;
+    line-height: normal;
 }
 
 .footer__menu {
     display: flex;
     align-items: flex-start;
     padding-right: 50px;
-    padding-left: 25px;
+    padding-left: 20px;
 }
+
 .footer__menu-list2 {
     margin-top: 42px;
 }
@@ -419,6 +422,7 @@ line-height: normal;
     text-align: center;
     padding-top: 15px;
     padding-bottom: 15px;
+    margin: 0;
 }
 
 .social__links {
@@ -446,11 +450,15 @@ line-height: normal;
     }
 
     .wrapper__capabilities {
-        padding: 0 25px;
+        padding: 0 45px;
     }
 
     .services__grid {
-        padding: 0 25px;
+        padding: 0 75px;
+    }
+
+    .wrapper__footer {
+        padding: 25px 25px 0 25px;
     }
 }
 
@@ -471,6 +479,24 @@ line-height: normal;
         max-width: 500px;
         padding-top: 50px;
     }
+
+    .wrapper__newsletter {
+        padding: 27px  45px 0 45px;
+    }
+
+    .wrapper__footer {
+        flex-wrap: wrap;
+        flex-direction: row;
+        padding-bottom: 38px;
+    }
+    
+    .company {
+        padding-left: 20px;
+    }
+
+    .footer__menu-list {
+        padding-left: 0;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -486,7 +512,7 @@ line-height: normal;
     }
 
     .story {
-        padding: 30px 0;
+        padding: 30px;
     }
 
     .wrapper__menu-flex {
@@ -519,6 +545,25 @@ line-height: normal;
     .capabilities__title-h2::after {
         margin: 10px auto 0;
     }
+
+    .wrapper__newsletter {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .newsletter__title {
+        padding-right: 0;
+    }
+
+    .footer__menu {
+        padding-left: 0;
+    }
+
+    .company {
+        padding-left: 0;
+    }
 }
 
 @media screen and (max-width: 400px) {
@@ -530,13 +575,18 @@ line-height: normal;
 
     .services__grid {
         justify-items: center;
+        padding: 0 20px;
     }
 
     .services__grid-card {
-        max-width: 280px;
+        max-width: 260px;
         margin: 0 auto;
         border: 1px solid #E6E6E6;
-        padding: 38px 25px;
-        /* margin-right: 50px; */
+        padding: 28px 25px;
+        margin-right: 45px;
+    }
+
+    .footer__menu {
+        padding-right: 0;
     }
 }
